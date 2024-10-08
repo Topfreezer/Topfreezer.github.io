@@ -11,21 +11,20 @@
         /* General styles */
         .span-button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 0.5rem 1rem;
             background-color: #007bff;
             color: white;
             border: 1px solid transparent;
-            border-radius: 5px;
-            font-size: 16px;
+            border-radius: 0.3rem;
+            font-size: 1rem;
             text-align: center;
             text-decoration: none;
             transition: background-color 0.2s ease, box-shadow 0.2s ease;
-            margin: 7px;
+            margin: 0.5rem;
         }
 
         body {
             background-image: linear-gradient(to right, #0f5055, #031029);
-            overflow: hidden;
             color: white;
         }
 
@@ -38,7 +37,7 @@
         .navbar-nav .nav-link {
             color: #D3D3D3;
             font-family: "Oregano", cursive;
-            font-size: 30px;
+            font-size: 1.5rem;
             transition: color 0.3s ease, transform 0.3s ease;
         }
 
@@ -57,22 +56,21 @@
 
         /* Card section styles */
         .card-section {
-            padding: 50px 0;
+            padding: 3rem 0;
             background: linear-gradient(135deg, rgba(255,255,255,0.1) 25%, rgba(0,0,0,0.1) 75%);
             backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border-radius: 1rem;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
         }
 
         .card {
-            border-radius: 15px;
+            border-radius: 0.75rem;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             background-color: #f8f9fa;
             backdrop-filter: blur(8px);
             border: 2px solid #0f5055;
-
         }
 
         .card:hover {
@@ -82,25 +80,25 @@
 
         .card-img-top {
             border-bottom: 1px solid #ddd;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
         }
 
         .card-body {
             background-color: lightblue;
-            padding: 20px;
+            padding: 1.5rem;
             text-align: center;
         }
 
         .card-title {
             font-family: "Permanent Marker", cursive;
-            font-size: 24px;
+            font-size: 1.5rem;
             color: #0f5055;
         }
 
         .card-text {
             font-family: "Oregano", cursive;
-            font-size: 18px;
+            font-size: 1rem;
             color: #333;
         }
 
@@ -108,20 +106,29 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 1rem;
             flex-wrap: wrap;
         }
 
-        .card-text {
-            font-size: 20px;
-        }
         footer {
             color: #D3D3D3;
             text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .card-title {
+                font-size: 1.25rem;
+            }
+
+            .card-text {
+                font-size: 0.9rem;
+            }
+
+            .span-button {
+                font-size: 0.85rem;
+                padding: 0.4rem 0.8rem;
+            }
         }
     </style>
 </head>
@@ -149,18 +156,18 @@
 <div class="gray-line"></div>
 
 <div class="container card-section mt-5">
-    <div class="card-row">
-        <div class="col-md-4">
-            <div class="card">
+    <div class="row card-row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">About Me</h5>
                     <p class="card-text">As a Python developer I find joy in coding as a hobby. Also indulge in gaming, across genres of video games! I look forward to sharing the projects I work on with you. © 2024 Topfreezer. All rights reserved</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="Project2.PNG" class="card-img-top" alt="House Prices Project">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="Project2.PNG" class="card-img-top img-fluid" alt="House Prices Project">
                 <div class="card-body">
                     <h5 class="card-title">House Prices</h5>
                     <p class="card-text">This is a web scraping project with Selenium and BeautifulSoup.</p>
@@ -170,9 +177,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="Password Manager.PNG" class="card-img-top" alt="Password Manager">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="Password Manager.PNG" class="card-img-top img-fluid" alt="Password Manager">
                 <div class="card-body">
                     <h5 class="card-title">Password Manager</h5>
                     <p class="card-text">A small and simple password manager I made using Tkinter. Skills:</p>
@@ -181,9 +188,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img src="Snake.PNG" class="card-img-top" alt="Calculator Project">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="Snake.PNG" class="card-img-top img-fluid" alt="Calculator Project">
                 <div class="card-body">
                     <h5 class="card-title">Snake game</h5>
                     <p class="card-text">This is a small snake Game I made in my own version.</p>
