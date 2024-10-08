@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Topfreezer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        .span-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+            margin: 7px;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #0f5055, #031029);
+            overflow: hidden;
+            color: white;
+        }
+
+        nav {
+            background-color: black;
+            background-image: linear-gradient(to right, #0f5055, #031029);
+            color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: #D3D3D3;
+            font-family: "Oregano", cursive;
+            font-size: 30px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            transform: scale(1.2) rotate(5deg);
+            text-shadow: 0 0 10px rgba(18, 150, 211, 0.8), 0 0 10px rgb(22, 132, 184);
+            color: aqua;
+        }
+
+        .gray-line {
+            background-color: #6c757d;
+            height: 2px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Card section styles */
+        .card-section {
+            padding: 50px 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 25%, rgba(0,0,0,0.1) 75%);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #f8f9fa;
+            backdrop-filter: blur(8px);
+            border: 2px solid #0f5055;
+
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-img-top {
+            border-bottom: 1px solid #ddd;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card-body {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-family: "Permanent Marker", cursive;
+            font-size: 24px;
+            color: #0f5055;
+        }
+
+        .card-text {
+            font-family: "Oregano", cursive;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .card-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card-text {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex flex-column align-items-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link disabled-link">|</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Projects.html">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="gray-line"></div>
+
+<div class="container card-section mt-5">
+    <div class="card-row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">About Me</h5>
+                    <p class="card-text">As a Python developer I find joy in coding as a hobby. Also indulge in gaming, across genres of video games! I look forward to sharing the projects I work on with you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Project2.PNG" class="card-img-top" alt="House Prices Project">
+                <div class="card-body">
+                    <h5 class="card-title">House Prices</h5>
+                    <p class="card-text">This is a web scraping project with Selenium and BeautifulSoup.</p>
+                    <span class="span-button">Web Scraping</span>
+                    <span class="span-button">Selenium</span>
+                    <span class="span-button">Automation</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Password Manager.PNG" class="card-img-top" alt="Password Manager">
+                <div class="card-body">
+                    <h5 class="card-title">Password Manager</h5>
+                    <p class="card-text">A small and simple password manager I made using Tkinter. Skills:</p>
+                    <span class="span-button">Tkinter</span>
+                    <span class="span-button">GUI</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Snake.PNG" class="card-img-top" alt="Calculator Project">
+                <div class="card-body">
+                    <h5 class="card-title">Calculator</h5>
+                    <p class="card-text">This project showcases a simple calculator built using JavaScript, HTML, and CSS.</p>
+                    <span class="span-button">Turtle</span>
+                    <span class="span-button">Game</span>
+                    <span class="span-button">Tkinter</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
