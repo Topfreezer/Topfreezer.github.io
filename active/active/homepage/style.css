@@ -75,7 +75,7 @@ body {
     animation: blink 0.7s infinite;
 }
 .sub-title .typed-cursor {
-    font-size: 2.5vw;
+    font-size: 6vw;
 }
 @keyframes blink {
     0%, 50% {
@@ -119,4 +119,21 @@ body {
 }
 .image:hover {
     box-shadow: 0 0 20px rgb(11, 87, 173), 0 0 40px rgba(18, 37, 211, 0.8);
+}
+
+@media screen and (max-width: 740px) {
+    .sub-title {
+        font-size: 5vw; 
+    }
+
+    .big-title {
+        font-size: 14vw;
+    }
+    .big-title .typed-cursor {
+        font-size: 14vw;
+    }
+
+    .sub-title .typed-cursor {
+        font-size: 5vw;
+    }
 }
